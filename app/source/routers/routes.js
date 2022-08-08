@@ -1,8 +1,8 @@
-const index = require('../controllers/index')
+const imports = require('./import')
 
 const express = require('express');
 const Router = express.Router();
 
-Router.get('/', index.getMethodController);
+Router.get('/', imports.controllers.index.getMethodController);
 
 module.exports = Router; 
